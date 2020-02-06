@@ -26,3 +26,4 @@ How to Use:
 
 3 - Run the code on your localhost.
 
+4 - For deployment purposes refer to flask documentation : https://flask.palletsprojects.com/en/1.1.x/deploying/, you can also use flask_ngrok to deploy your application globaly using google colab for more info on that topic visit https://medium.com/@kshitijvijay271199/flask-on-google-colab-f6525986797b
