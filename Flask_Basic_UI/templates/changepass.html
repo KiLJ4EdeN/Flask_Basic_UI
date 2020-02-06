@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Password</title>
+</head>
+  {% if statement %}
+  System message: {{ statement }}
+  {% endif %}
+<body>
+<nav>
+  <a href="../logout/"> Logout </a> |
+  <a href="../dashboard/"> Dashboard </a> |
+  <a href="../changemail/"> Change Mail </a> |
+</nav>
+<form action="./" method="post">
+  <p> Old Password</p>
+  {{ form.old_password }}
+  {{ form.hidden_tag() }}
+  <p> New Password </p>
+  {{ form.password }}
+  {{ form.hidden_tag() }}
+  <br>
+  <br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

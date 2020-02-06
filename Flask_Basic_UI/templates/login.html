@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Login </title>
+</head>
+<body>
+<p> {{ statement }}</p>
+<nav>
+  <a href="../register/"> Register </a>
+</nav>
+    <form  action="./" method="post">
+
+        <p> Email </p>
+        {{ form.email }}
+
+        <p> Password </p>
+        {{ form.password }}
+        {{ form.hidden_tag() }}
+
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
